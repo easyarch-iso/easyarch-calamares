@@ -1,0 +1,10 @@
+---
+$schema: https://json-schema.org/schema#
+$id: https://gitlab.com/easyarch1/schemas/installtype
+additionalProperties: installtype
+type: object
+properties:
+    mirrorListDir: { type: string, required: true }
+    mirrorlistFile: { type: string, required: true }
+    mirrorListSourcePath: { type: string, required: true }
+    updateMirrorList: { type: bool, required: true }

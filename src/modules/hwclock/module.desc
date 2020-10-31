@@ -1,0 +1,6 @@
+---
+type:       "job"
+name:       "hwclock"
+interface:  "python"
+script:     "main.py"
+noconfig:   true

@@ -1,0 +1,5 @@
+---
+type:       "job"
+name:       "displaymanager"
+interface:  "python"
+script:     "main.py"

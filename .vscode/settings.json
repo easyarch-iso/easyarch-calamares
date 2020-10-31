@@ -1,0 +1,39 @@
+{
+    "cmake.configureArgs": [
+        "-DWITH_PYTHONQT:BOOL=FALSE",
+        "-DWITH_PYTHON:BOOL=TRUE",
+        "-DWITH_KF5DBus:BOOL=FALSE"
+    ],
+    "cmake.debugConfig": {
+        "args": [
+            "-d"
+        ]
+    },
+    "python.linting.ignorePatterns": [
+        ".vscode/*.py",
+        "**/site-packages/**/*.py",
+        "**/build"
+    ],
+    "files.exclude": {
+        "**/build": true
+    },
+    "files.watcherExclude": {
+        "**/build": true
+    },
+    "C_Cpp.clang_format_fallbackStyle": "WebKit",
+    "C_Cpp.default.intelliSenseMode": "gcc-x64",
+    "cmake.ctest.parallelJobs": 2,
+    "cmake.generator": "Ninja",
+    "C_Cpp.errorSquiggles": "Enabled",
+    "files.associations": {
+        "*.tcc": "cpp",
+        "unordered_map": "cpp",
+        "fstream": "cpp",
+        "istream": "cpp",
+        "numeric": "cpp",
+        "ostream": "cpp",
+        "sstream": "cpp",
+        "*.inc": "cpp",
+        "*.def": "cpp"
+    }
+}

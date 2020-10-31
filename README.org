@@ -1,0 +1,59 @@
+* EasyArch calamares: Installer for the EasyArch ISO
+  This is a copied and then edited source distribution of Calamares
+  version 3.2.28. The original code has been copied in this repo.
+  It is and will be modified as necessary to suite the pupose of
+  EasyArch iso installation process. Check out the [[https://github.com/calamares][original repository]].
+
+** Download
+   You can download the latest ISO from [[https://easyarch-iso.com/][EasyArch Website]].
+
+** Requirements
+   The following list are dependencies for building this source
+   on archlinux -
+
+   1. parted
+   2. kconfig
+   3. kcoreaddons
+   4. kiconthemes
+   5. ki18n
+   6. kio
+   7. solid
+   8. yaml-cpp
+   9. kpmcore
+   10. boost
+   11. boost-libs
+   12. hwinfo
+   13. qt5-svg
+   14. polkit-qt5
+   15. gtk-update-icon-cache
+   16. plasma-framework
+   17. qt5-xmlpatterns
+   18. squashfs-tools
+   19. qt5-translations
+   20. mkinitcpio-openswap
+   21. ckbcomp
+   22. cmake
+   23. extra-cmake-modules
+   24. qt5-tools
+
+   Among the above mkinitcpio-openswap and ckbcomp are from AUR.
+
+** Features
+   - Ability to install offline (no need for internet)
+   - Ability to install extra packages in online mode
+   - Archlinux specific modules
+   - Stripped down module list, no extra module will be used
+
+** Building
+   Run the following commands to build calamares from this source -
+   #+BEGIN_SRC shell
+     mkdir build
+     cd build
+     cmake -DCMAKE_BUILD_TYPE:STRING=Debug -DWITH_PYTHONQT:BOOL=FALSE -DWITH_PYTHON:BOOL=TRUE -DWITH_KF5DBus:BOOL=TRUE ..
+     make
+   #+END_SRC
+
+** Links
+   - [[https://github.com/calamares/calamares/wiki][Official wiki from Calamares team]]
+   - [[https://github.com/calamares/calamares/wiki/Develop-Guide][Developer guide]]
+   - [[https://github.com/calamares/calamares/wiki/Deploy-Guide][Deployment guide]]

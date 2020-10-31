@@ -1,0 +1,5 @@
+---
+type:       "job"
+name:       "services-systemd"
+interface:  "python"
+script:     "main.py"
